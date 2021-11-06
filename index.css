@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     background-color: var(--very-light-gray);
@@ -24,12 +29,12 @@ body{
     text-align: center;
 }
 
-.container .headings h2:first-child{
+.container .headings h1{
     color: var(--very-dark-blue);
     font-weight: 200;
     letter-spacing: 1px;
 }
-.container .headings h2:nth-child(2){
+.container .headings h2{
     color: var(--very-dark-blue);
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -59,11 +64,11 @@ p.heading-description{
 .card-wrapper .fourth-card-wrapper{
     border-color: var(--blue);
 }
-h4, p{
+h3, p{
     padding: 0px 20px 30px 20px;
 
 }
-h4{
+h3{
     padding-top: 20px;
     padding-bottom: 7px;
     color: var(--very-dark-blue);
@@ -75,7 +80,7 @@ p{
     font-size: 14px;
 }
 img{
-    margin-left: 230px;
+    margin-left: 140px;
     height: 40px;
     width: 40px;
     margin-bottom: 15px;
@@ -90,6 +95,13 @@ img{
 }
 
 @media (min-width: 768px) {
+    body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
     .container{
         margin: 10px 0px 0px 0px
     }
@@ -101,7 +113,7 @@ img{
         
     }
     .desktop-wrapper{
-        flex-direction: column;
+        
         align-items: center;
         justify-content: center;
         
@@ -109,12 +121,20 @@ img{
     .card-wrapper .first-card-wrapper,.card-wrapper .second-card-wrapper,.card-wrapper .third-card-wrapper,.card-wrapper .fourth-card-wrapper{
         width: 300px;
         height: 170px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     p{
         padding-bottom: 20px;
     }
+    img{
+        margin-left: 230px;
+    }
+    .heading-description{
+        width:50%;
+        transform: translateX(250px);
+    }
     .attribution{
-        padding-top: 10px;
+        padding-top: 20px;
     }
 }
